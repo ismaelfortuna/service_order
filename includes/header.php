@@ -11,9 +11,7 @@
     <title>ORDEMSIS</title>
   </head>
   <body class="bg-dark text-light">
-
     <div class="container">
-
         <div class="jumbotron bg-success">
             <h1> O R D E M S I S </h1>
             <p>Gestor de Ordens de Serviços</p>
