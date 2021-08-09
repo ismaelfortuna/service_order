@@ -1,0 +1,8 @@
+{
+    "name": "ismael/ordens",
+    "autoload": {
+        "psr-4": {
+            "App\\":"app/"
+        }
+    }
+}
