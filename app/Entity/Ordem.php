@@ -99,6 +99,17 @@ class Ordem{
     }
     
     /**
+     * Método responsável por obter a quantidade de ordens de serviço do banco de dados
+     * @param string $where
+     * @return array
+     */
+    public static function getQuantidadeOrdens($where = null){
+        return (new Database('ordens'))->select($where,null,null,'COUNT(*) as qtd')
+                                      ->fetchObject()
+                                      ->qtd;
+    }
+    
+    /**
      * Método responsável por buscar uma ordem de serviço com base no seu ID
      * @param integer $id
      * @return Ordem
